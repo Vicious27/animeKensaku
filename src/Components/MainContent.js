@@ -1,14 +1,19 @@
 import React from 'react'
 
-function MainContent() {
+function MainContent(props) {
   return (
     <main>
       <div className="main-head">
-        <form className="search-box">
+        <form
+          className="search-box"
+          onSubmit={props.handleSearch}>
           <input
             type="search"
             placeholder="Looking for an Anime?"
-            required></input>
+            required
+            value={props.search}
+            onChange={e => props.setSearch(
+              e.target.value)}></input>
         </form>
       </div>
     </main>

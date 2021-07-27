@@ -11,15 +11,26 @@ function App() {
   const handleSearch = e => {
     e.preventDefault();
 
-    console.log(search)
-    // FetchAnime(search);
+    FetchAnime(search);
+  }
+
+  // API path https://api.jikan.moe/v3
+  const FetchAnime = async (query) => {
+    const temp = await fetch(`https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=10`)
+      .then(res => res.json())
+
+    setAnimeList(temp.results)
   }
 
   return (
     <div className="App">
       <Header />
       <div className="content-wrap">
-        <MainContent />
+        <MainContent
+          handleSearch={handleSearch}
+          search={search}
+          setSearch={setSearch}
+          animeList={animeList} />
       </div>
     </div>
   )
