@@ -8,6 +8,13 @@ function App() {
   const [animeList, setAnimeList] = useState([]);
   const [search, setSearch] = useState("");
 
+  const handleSearch = e => {
+    e.preventDefault();
+
+    console.log(search)
+    // FetchAnime(search);
+  }
+
   return (
     <div className="App">
       <Header />
