@@ -31,8 +31,15 @@ strong {
 /* form and search bar styles*/
 
 .content-wrap {
-  padding: 5.5em;
   display: flex;
+  justify-content: center;
+}
+
+/* controls searchbar styles */
+
+.search-box {
+  display: flex;
+  padding: 3em;
   justify-content: center;
 }
 
@@ -51,14 +58,18 @@ input:hover {
 }
 
 .anime-card {
-  margin-top: 2em;
-  flex: 1 2 10em;
+  padding: 4px;
 }
 
+/* Container for all anime/img displayed*/
 .anime-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  background: rgba(10, 15, 15, 0.918);
+  border-top-right-radius: .5em;
+  border-top-left-radius: .5em;
 }
 
 img {
@@ -68,4 +79,25 @@ img {
 
 figure > img {
   border-radius: .8em;
+  padding: 4px;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgba(80, 137, 190, 0.925);
+}
+
+a:visited {
+  color: rgba(81, 211, 161, 0.877);
+}
+
+a:hover {
+  color: rgba(130, 193, 214, 0.938);
+}
+
+/* Controls line widht */
+a > h3 {
+  text-align: center;
+  width: 20ch;
 }
