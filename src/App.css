@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Crimson Text', serif;
+}
+
+ header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(79, 207, 216, 0.932);
+  padding: 6px;
+  color: rgba(8, 7, 7, 0.911);
+  font-size: 1.2em;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 4px;
+}
+
+strong {
+  color: rgba(255, 255, 255, 0.945);
+}
