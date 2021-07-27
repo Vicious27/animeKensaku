@@ -52,4 +52,20 @@ input:hover {
 
 .anime-card {
   margin-top: 2em;
+  flex: 1 2 10em;
+}
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+img {
+  width: 220px;
+  height: 300px;
+}
+
+figure > img {
+  border-radius: .8em;
 }
