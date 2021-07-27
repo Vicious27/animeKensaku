@@ -27,3 +27,25 @@
 strong {
   color: rgba(255, 255, 255, 0.945);
 }
+
+/* form and search bar styles*/
+
+.content-wrap {
+  padding: 5.5em;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 280px;
+  height: 40px;
+  font-size: 1.2em;
+  border-radius: .8em;
+  text-align: center;
+  box-shadow: 5px 6px 6px 0 rgba(27, 22, 27, 0.774);
+  background-color: rgba(79, 207, 216, 0.932);
+}
+
+input:hover {
+  background-color: rgba(95, 49, 81, 0.918);
+}
