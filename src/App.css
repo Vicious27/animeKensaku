@@ -49,3 +49,7 @@ input {
 input:hover {
   background-color: rgba(107, 54, 91, 0.788);
 }
+
+.anime-card {
+  margin-top: 2em;
+}
