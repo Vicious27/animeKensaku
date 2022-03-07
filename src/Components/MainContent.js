@@ -16,6 +16,7 @@ function MainContent(props) {
             onChange={e => props.setSearch(
               e.target.value)}></input>
         </form>
+        <button className='search-button' onClick={props.handleSearch}>Search</button>
         <div className="anime-list">
           {props.animeList.map(anime => (
             <AnimeCard

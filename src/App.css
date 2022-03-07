@@ -67,6 +67,31 @@ input:hover {
   padding: 4px;
 }
 
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  border-radius: 1.6em;
+  font-size: 18px;
+  background-color: rgba(95, 49, 81, 0.829);
+  color: rgba(0, 0, 0, 0.575);
+  box-shadow: 0 6px 6px 0 rgba(95, 94, 141, 0.774);
+  cursor: pointer;
+  transition: background .1s ease;
+}
+
+.search-button:hover {
+  transform: translateY(.1em);
+  border-bottom-width: .2em;
+  background-color: rgba(107, 54, 91, 0.788);
+  color: rgba(31, 25, 25, 0.897);
+}
+
 /* Container for all anime/img displayed*/
 .anime-list {
   display: flex;
@@ -106,4 +131,9 @@ a:hover {
 a > h3 {
   text-align: center;
   width: 20ch;
+  border-bottom: ridge 2px rgba(212, 24, 128, 0.897);
+  box-shadow: black 0 0 10px;
+  padding: .2em;
+  background-color: rgba(8, 6, 6, 0.918);
+  border-radius: .8em .2em .8em .2em;
 }
